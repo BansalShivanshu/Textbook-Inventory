@@ -1,0 +1,138 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}    
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+header {
+    overflow: hidden;
+    /* background-color: #394750; */
+    background-color: #1D3336;
+    top: 0%;
+    width: 100%;
+    padding: 20px;
+    /* margin-right: 0%;
+    padding-right: 0%; */
+}
+
+h1 {
+    display: inline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    /* text-decoration: none; */
+    /* padding: 14px 16px; */
+}
+
+nav {
+    display: inline;
+    float: right;
+    margin-right: 40px;
+    margin-top: 5px;
+}
+
+#heading-firstwrd {
+    color: red;
+}
+
+#heading-lastwrd {
+    color: white;
+}
+
+
+
+#inventory {
+    /* margin-top: 30px; */
+    padding-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+.book {
+    border: 0.5px;
+    height: 20%;
+    width: 20%;
+    margin: 10px;
+}
+
+.book img {
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 771px) {
+    .book {
+        height: 40%;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .book {
+        height: 100%;
+        width: 100%;
+    }
+
+    .book img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.book figure {
+    background-color: white;
+}
+
+.book p {
+    background-color: white;
+    padding: 10px;
+}
+
+.book-description a {
+    color: black;
+}
+
+.more-info a {
+    visibility: hidden;
+
+    /* making it a button */
+    background-color: seagreen;
+    color: seashell;
+    padding: 5px;
+    border: 1px solid seagreen;
+}
+
+.book:hover {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5); */
+    box-shadow: 7px 7px 5px 5px rgba(105, 105, 105, 0.7);
+}
+
+.book:hover .more-info a {
+    visibility: visible;
+
+    animation: fadeIn 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.none {
+    display: none;
+}
